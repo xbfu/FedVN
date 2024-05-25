@@ -15,7 +15,7 @@ client to learn a personalized edge predictor that determines how the VNs connec
 
 
 <div align=center><img src="https://anonymous.4open.science/r/FedVN-10024/figure_framework.pdf" width="80%"/></div>
-[image](https://anonymous.4open.science/r/FedVN-10024/figure_framework.pdf)  
+![image](https://anonymous.4open.science/r/FedVN-10024/figure_framework.pdf)  
 
 
 ## Dependencies
