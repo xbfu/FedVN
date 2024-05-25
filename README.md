@@ -14,7 +14,7 @@ virtual nodes while training a global GNN model. Considering the cross-client di
 client to learn a personalized edge predictor that determines how the VNs connect its local graphs.
 
 
-<div align=center><img src="https://anonymous.4open.science/r/FedVN-10024/figure_framework.png" width="80%"/></div>
+<div align=center><img src="https://anonymous.4open.science/r/FedVN-10024/figure_framework.pdf" width="80%"/></div>
 
 ## Dependencies
 
