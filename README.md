@@ -4,7 +4,7 @@ This is our implementation of our paper *Virtual Nodes Can Help: Tackling Distri
 **TL;DR**: A novel perspective to tackle distribution shifts in federated graph learning through client-specific graph augmentation with virtual nodes.  
 
 **Framework Overview**:
-This figure demonstrates an overview of our proposed FedVN. 
+The following figure demonstrates an overview of our proposed FedVN. 
 The intuition of FedVN is to let the clients manipulate their local data through learnable graph augmentation strategies 
 in order that the global GNN model can be trained over identical manipulated graph data without any distribution shift 
 across clients. To achieve this, the key point is to design a proper scheme for graph augmentation. Inspired by recent
@@ -14,7 +14,7 @@ virtual nodes while training a global GNN model. Considering the cross-client di
 client to learn a personalized edge predictor that determines how the VNs connect its local graphs.
 
 
-<div align=center><img src="https://anonymous.4open.science/r/FedVN-10024/FedVN.png" height="100px"/></div>
+<div align=center><img src="https://anonymous.4open.science/r/FedVN-10024/FedVN.png" height="200px"/></div>
 
 
 ## Dependencies
