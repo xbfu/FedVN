@@ -32,14 +32,23 @@ torch-sparse==0.6.18
 
 ## Parameters
 
-| Parameter         |           Description                     | 
-|-------------------|-------------------------------------------|
-| dataset_name      |   Dataset to use (default: motif)         |
-| domain            |   Data partition setting (default: basis) |
-| data_path         |   Data directory (default: ./data/)       |
-| num_local_graphs  |   Number of local graphs (default: 1000)  |
-| epochs            |   Number of local epochs (default: 1)     |
-| batch_size        |   Batch size of training (default: 32)    |
+| Parameter         |           Description                                 | 
+|-------------------|-------------------------------------------------------|
+| dataset_name      |   Dataset to use (default: motif)                     |
+| domain            |   Data partition setting (default: basis)             |
+| data_path         |   Data directory (default: ./data/)                   |
+| num_local_graphs  |   Number of local graphs (default: 1000)              |
+| epochs            |   Number of local epochs (default: 1)                 |
+| batch_size        |   Batch size of training (default: 32)                |
+| lr                |   Learning rate (default: 0.001)                      |
+| rounds            |   Number of rounds (default: 200)                     |
+| hidden            |   Hidden size of the mode (default: 100)              |
+| hidden_eg         |   Hidden size in the edge generator (default: 100)    |
+| num_vn            |   Number of virtual nodes (default: 20)               |
+| lambda_1          |   The value of $lambda_1$ (default: 0.1)              |
+| lambda_2          |   The value of $lambda_2$ (default: 1.0)              |
+| t                 |   Temperature (default: 0.1)                          |
+| gpu_id            |   GPU device ID (default: 0)                          |
 
 ## Usage
 
