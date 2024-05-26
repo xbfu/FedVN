@@ -14,21 +14,21 @@ virtual nodes while training a global GNN model. Considering the cross-client di
 client to learn a personalized edge predictor that determines how the VNs connect its local graphs.
 
 
-<div align=center><img src="https://anonymous.4open.science/r/FedVN-10024/FedVN.png" width="800"/></div>
+<div align=center><img src="https://anonymous.4open.science/r/FedVN-10024/FedVN.png" width="600"/></div>
 
 
 ## Dependencies
 
-```
-matplotlib==3.7.1
-numpy==1.21.5
-scikit_learn==1.0.2
-torch==1.13.1
-torch-cluster==1.6.3
-torch_geometric==2.4.0
-torch-scatter==2.1.2
+
+matplotlib==3.7.1  
+numpy==1.21.5  
+scikit_learn==1.0.2  
+torch==1.13.1  
+torch-cluster==1.6.3  
+torch_geometric==2.4.0  
+torch-scatter==2.1.2  
 torch-sparse==0.6.18
-```
+
 
 ## Parameters
 
