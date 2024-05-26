@@ -77,5 +77,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     num_vn = args.num_vn
-    for seed in [1]:
+    for seed in range(5):
         run(args, seed)
