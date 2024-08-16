@@ -4,14 +4,9 @@ This is our implementation of our paper *Virtual Nodes Can Help: Tackling Distri
 **TL;DR**: A novel perspective to tackle distribution shifts in federated graph learning through client-specific graph augmentation with virtual nodes.  
 
 **Framework Overview**:
-The following figure demonstrates an overview of our proposed FedVN. 
-The intuition of FedVN is to let the clients manipulate their local data through learnable graph augmentation strategies 
-in order that the global GNN model can be trained over identical manipulated graph data without any distribution shift 
-across clients. To achieve this, the key point is to design a proper scheme for graph augmentation. Inspired by recent
-studies about virtual nodes in graph learning, we propose to learn graph augmentation with extra virtual nodes to 
-eliminate distribution shifts in FGL. More specifically, the clients in FedVN collaboratively learn a set of shared 
-virtual nodes while training a global GNN model. Considering the cross-client distribution shift, FedVN enables each 
-client to learn a personalized edge predictor that determines how the VNs connect its local graphs.
+Federated Graph Learning (FGL) enables multiple clients to jointly train powerful graph learning models, e.g., Graph Neural Networks (GNNs), without sharing their local graph data for graph-related downstream tasks, such as graph property prediction. In the real world, however, the graph data can suffer from significant distribution shifts across clients as the clients may collect their graph data for different purposes. In particular, graph properties are usually associated with invariant label-relevant substructures (i.e., subgraphs) across clients, while label-irrelevant substructures can appear in a client-specific manner. The issue of distribution shifts of graph data hinders the efficiency of GNN training and leads to serious performance degradation in FGL. 
+To tackle the aforementioned issue, we propose a novel FGL framework entitled FedVN that eliminates distribution shifts through client-specific graph augmentation strategies with multiple learnable Virtual Nodes (VNs). Specifically, FedVN lets the clients jointly learn a set of shared VNs while training a global GNN model. To eliminate distribution shifts, each client trains a personalized edge generator that determines how the VNs connect local graphs in a client-specific manner.
+Furthermore, we provide theoretical analyses indicating that FedVN can eliminate distribution shifts of graph data across clients. Extensive experiments on four datasets under five settings demonstrate the superiority of our proposed FedVN over nine baselines.
 
 
 <div align=center><img src="https://anonymous.4open.science/r/FedVN-10024/FedVN.png" height="200px"/></div>
