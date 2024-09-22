@@ -35,31 +35,35 @@ Furthermore, we provide theoretical analyses indicating that FedVN can eliminate
 
 Here is an example to run FedVN on Motif/Basis
 
-##### 1. Prepare environment
+##### 1. Prepare Environment
 Install the environment for [GOOD](https://github.com/divelab/GOOD) [1].
 ```
 git clone https://github.com/divelab/GOOD.git && cd GOOD
 pip install -e .
 ```
 
-##### 2. Prepare dataset 
+##### 2. Prepare Dataset 
 ```
 cd .. && unzip data/GOODMotif.zip -d data 
 ```
 
-##### 3. Run code
+##### 3. Run Code
 
 ```
 python fedvn.py --dataset_name=motif --domain=basis --data_path=./data/ --num_vn=20 --lambda1=0.1 lambda2=1 
 ```
 
-## Other dataset 
+## Other Dataset 
 
 |   Dataset     |                   Link        | 
 |---------------|-------------------------------|
 |   CMNIST      | https://drive.google.com/file/d/1F2r2kVmA0X07AXyap9Y_rOM6LipDzwhq/view?usp=sharing |
 |   ZINC        | https://drive.google.com/file/d/1CHR0I1JcNoBqrqFicAZVKU3213hbsEPZ/view?usp=sharing |
 |   SST2        | https://drive.google.com/file/d/1lGNMbQebKIbS-NnbPxmY4_uDGI7EWXBP/view?usp=sharing |
+
+## Hardware Environment
+
+We run our experiments using a server with 4 NVIDIA RTX 4000 GPUs. Each GPU has 8 GB of memory. The server is equipped with 512 GB memory and 2 10-core Intel CPUs.
 
 ## Reference
 [1] Gui, Shurui, Xiner Li, Limei Wang, and Shuiwang Ji. "Good: A graph out-of-distribution benchmark." Advances in Neural Information Processing Systems 35 (2022): 2059-2073.
