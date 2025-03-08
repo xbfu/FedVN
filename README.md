@@ -9,7 +9,7 @@ To tackle the aforementioned issue, we propose a novel FGL framework entitled Fe
 Furthermore, we provide theoretical analyses indicating that FedVN can eliminate distribution shifts of graph data across clients. Extensive experiments on four datasets under five settings demonstrate the superiority of our proposed FedVN over nine baselines.
 
 
-<div align=center><img src="https://anonymous.4open.science/r/FedVN-10998/FedVN.png" height="200px"/></div>
+<div align=center><img src="https://github.com/xbfu/FedVN/blob/main/FedVN.png" height="200px"/></div>
 
 ## Parameters
 
