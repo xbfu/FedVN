@@ -8,7 +8,7 @@ Federated Graph Learning (FGL) enables multiple clients to jointly train powerfu
 To tackle the aforementioned issue, we propose a novel FGL framework entitled FedVN that eliminates distribution shifts through client-specific graph augmentation strategies with multiple learnable Virtual Nodes (VNs). Specifically, FedVN lets the clients jointly learn a set of shared VNs while training a global GNN model. To eliminate distribution shifts, each client trains a personalized edge generator that determines how the VNs connect local graphs in a client-specific manner.
 Furthermore, we provide theoretical analyses indicating that FedVN can eliminate distribution shifts of graph data across clients. Extensive experiments on four datasets under five settings demonstrate the superiority of our proposed FedVN over nine baselines.
 
-!(https://github.com/xbfu/FedVN/blob/main/FedVN.png)
+![](https://github.com/xbfu/FedVN/blob/main/FedVN.png)
 
 ## Parameters
 
