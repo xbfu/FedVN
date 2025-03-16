@@ -49,7 +49,7 @@ cd .. && unzip data/GOODMotif.zip -d data
 ##### 3. Run Code
 
 ```
-python fedvn.py --dataset_name=motif --domain=basis --data_path=./data/ --num_vn=20 --lambda1=0.1 lambda2=1 
+python fedvn.py --dataset_name=motif --domain=basis --data_path=./data/ --num_vn=20 --lambda1=0.1 --lambda2=1 
 ```
 
 ## Other Dataset 
